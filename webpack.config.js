@@ -4,7 +4,6 @@ module.exports = {
 	...defaultConfig,
 	output: {
 		...defaultConfig.output,
-		library: "default",
-		libraryTarget: "commonjs",
+		libraryTarget: "commonjs-module",
 	},
 };
