@@ -3,9 +3,6 @@
 	"version": "1.0.0",
 	"description": "Toolkit for developing WordPress Gutenberg blocks.",
 	"main": "index.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/tnke/wp-block-toolkit.git"
@@ -16,14 +13,14 @@
 		"react"
 	],
 	"author": "Timo Sundvik",
-	"license": "ISC",
+	"license": "GPL-2.0-or-later",
 	"bugs": {
 		"url": "https://github.com/tnke/wp-block-toolkit/issues"
 	},
 	"dependencies": {
-		"@wordpress/block-editor": "^6.1.7",
-		"@wordpress/blocks": "^9.1.4",
-		"@wordpress/i18n": "^4.1.1"
+		"@wordpress/block-editor": "^7.0.0",
+		"@wordpress/blocks": "^11.0.0",
+		"@wordpress/i18n": "^4.2.1"
 	},
 	"homepage": "https://github.com/tnke/wp-block-toolkit#readme"
 }
