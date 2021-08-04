@@ -4,7 +4,7 @@
 import InlineNotice from "./components/InlineNotice";
 import PostSelectControl from "./components/PostSelectControl";
 import RequireBlocks from "./components/RequireBlocks";
-import TaxonomyControl from "../components/TaxonomyControl";
+import TaxonomyControl from "./components/TaxonomyControl";
 
 /**
  * Hooks
