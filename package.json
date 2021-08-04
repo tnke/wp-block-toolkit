@@ -1,6 +1,6 @@
 {
 	"name": "@tnke/wp-block-toolkit",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Toolkit for developing WordPress Gutenberg blocks.",
 	"main": "index.js",
 	"repository": {
@@ -12,6 +12,14 @@
 		"gutenberg",
 		"react"
 	],
+	"scripts": {
+		"build": "wp-scripts build",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"start": "wp-scripts start",
+		"packages-update": "wp-scripts packages-update"
+	},
 	"author": "Timo Sundvik",
 	"license": "GPL-2.0-or-later",
 	"bugs": {
@@ -22,5 +30,11 @@
 		"@wordpress/blocks": "^11.0.0",
 		"@wordpress/i18n": "^4.2.1"
 	},
-	"homepage": "https://github.com/tnke/wp-block-toolkit#readme"
+	"devDependencies": {
+		"@wordpress/scripts": "^17.1.0"
+	},
+	"homepage": "https://github.com/tnke/wp-block-toolkit#readme",
+	"publishConfig": {
+		"access": "public"
+	}
 }
