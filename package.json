@@ -1,24 +1,29 @@
 {
-  "name": "@tnke/wp-block-toolkit",
-  "version": "1.0.0",
-  "description": "Toolkit for developing WordPress Gutenberg blocks.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tnke/wp-block-toolkit.git"
-  },
-  "keywords": [
-    "wordpress",
-    "gutenberg",
-    "react"
-  ],
-  "author": "Timo Sundvik",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/tnke/wp-block-toolkit/issues"
-  },
-  "homepage": "https://github.com/tnke/wp-block-toolkit#readme"
+	"name": "@tnke/wp-block-toolkit",
+	"version": "1.0.0",
+	"description": "Toolkit for developing WordPress Gutenberg blocks.",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/tnke/wp-block-toolkit.git"
+	},
+	"keywords": [
+		"wordpress",
+		"gutenberg",
+		"react"
+	],
+	"author": "Timo Sundvik",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/tnke/wp-block-toolkit/issues"
+	},
+	"dependencies": {
+		"@wordpress/block-editor": "^6.1.7",
+		"@wordpress/blocks": "^9.1.4",
+		"@wordpress/i18n": "^4.1.1"
+	},
+	"homepage": "https://github.com/tnke/wp-block-toolkit#readme"
 }
