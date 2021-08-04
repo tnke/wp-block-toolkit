@@ -1,8 +1,8 @@
 {
 	"name": "@tnke/wp-block-toolkit",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "Toolkit for developing WordPress Gutenberg blocks.",
-	"main": "index.js",
+	"main": "build/index.js",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/tnke/wp-block-toolkit.git"
