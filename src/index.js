@@ -1,4 +1,9 @@
 /**
+ * Styles
+ */
+import "./editor.scss";
+
+/**
  * Components
  */
 import InlineNotice from "./components/InlineNotice";

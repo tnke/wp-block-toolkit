@@ -5,6 +5,11 @@ import { __ } from "@wordpress/i18n";
 import { CheckboxControl, Spinner, BaseControl } from "@wordpress/components";
 import { useState, useEffect } from "@wordpress/element";
 
+/**
+ * Internal dependencies
+ */
+import { textdomain, classNamePrefix } from "../config.json";
+
 const TaxonomyControl = ({ label, taxonomies, value, onChange }) => {
 	const [query, setQuery] = useState("");
 	const [filteredTaxonomies, setFilteredTaxonomies] = useState(taxonomies);
@@ -63,7 +68,7 @@ const SearchInput = ({ value, onChange }) => {
 		>
 			<input
 				type="text"
-				placeholder={__("Search", "em-components-taxonomy-control")}
+				placeholder={__("Search", textdomain)}
 				value={value}
 				onChange={onChange}
 				style={{
@@ -77,7 +82,7 @@ const SearchInput = ({ value, onChange }) => {
 const CheckboxWrapper = ({ children }) => {
 	return (
 		<div
-			className="admin-checkbox-wrapper"
+			className={`${classNamePrefix}-checkbox-wrapper`}
 			style={{
 				height: 200,
 				overflow: "auto",
