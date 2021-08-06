@@ -96,6 +96,10 @@ const { missingBlocks, hasRequiredBlocks } = useRequiredBlocks([
 
 ## Changelog
 
+### 2.0.1
+
+- Optimized readme assets
+
 ### 2.0.0
 
 - Changed the name of PostSelectControl component and the postValue prop (breaking changes)
