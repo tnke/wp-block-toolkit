@@ -9,12 +9,12 @@ export const InlineNotice: React.FC<{
 	level: "warning" | "error";
 }> = props;
 
-export const PostSelectControl: React.FC<{
+export const PostControl: React.FC<{
 	label: string;
 	posts: any[];
 	value: string | number;
 	onChange: (...args: any[]) => any;
-	postValue: string;
+	postValueKey: string;
 }> = props;
 
 export const RequireBlocks: React.FC<{

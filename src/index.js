@@ -7,7 +7,7 @@ import "./editor.scss";
  * Components
  */
 import InlineNotice from "./components/InlineNotice";
-import PostSelectControl from "./components/PostSelectControl";
+import PostControl from "./components/PostControl";
 import RequireBlocks from "./components/RequireBlocks";
 import TaxonomyControl from "./components/TaxonomyControl";
 
@@ -19,7 +19,7 @@ import { useRequiredBlocks } from "./hooks/use-required-blocks";
 
 export {
 	InlineNotice,
-	PostSelectControl,
+	PostControl,
 	RequireBlocks,
 	TaxonomyControl,
 	useAllPosts,

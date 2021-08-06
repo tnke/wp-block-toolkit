@@ -4,19 +4,13 @@
 import { ComboboxControl, Spinner } from "@wordpress/components";
 import { useState, useEffect } from "@wordpress/element";
 
-const PostSelectControl = ({
-	label,
-	posts,
-	value,
-	onChange,
-	postValue = "id",
-}) => {
+const PostControl = ({ label, posts, value, onChange, valueKey = "id" }) => {
 	const [options, setOptions] = useState([]);
 	const [filteredOptions, setFilteredOptions] = useState([]);
 
 	useEffect(() => {
-		setOptions(getSelectOptionsFromPosts(posts, postValue));
-	}, [posts, postValue]);
+		setOptions(getSelectOptionsFromPosts(posts, valueKey));
+	}, [posts, valueKey]);
 
 	useEffect(() => {
 		setFilteredOptions(options);
@@ -44,13 +38,13 @@ const PostSelectControl = ({
 	);
 };
 
-export default PostSelectControl;
+export default PostControl;
 
-const getSelectOptionsFromPosts = (posts, postValue = "id") => {
+const getSelectOptionsFromPosts = (posts, valueKey = "id") => {
 	if (!posts || !posts.length) return [];
 
 	return posts.map((post) => ({
 		label: post.title.rendered,
-		value: post[postValue],
+		value: post[valueKey],
 	}));
 };
