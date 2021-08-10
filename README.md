@@ -96,6 +96,11 @@ const { missingBlocks, hasRequiredBlocks } = useRequiredBlocks([
 
 ## Changelog
 
+### 2.0.2
+
+- Added "prepare" script
+- Refactored PostControl: core ComboboxControl now has query filtering built-in, no need to manually do it like in the official docs.
+
 ### 2.0.1
 
 - Optimized readme assets
