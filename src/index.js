@@ -9,6 +9,7 @@ import "./editor.scss";
 import InlineNotice from "./components/InlineNotice";
 import PostControl from "./components/PostControl";
 import RequireBlocks from "./components/RequireBlocks";
+import SortablePostsControl from "./components/SortablePostsControl";
 import TaxonomyControl from "./components/TaxonomyControl";
 
 /**
@@ -21,6 +22,7 @@ export {
 	InlineNotice,
 	PostControl,
 	RequireBlocks,
+	SortablePostsControl,
 	TaxonomyControl,
 	useAllPosts,
 	useRequiredBlocks,

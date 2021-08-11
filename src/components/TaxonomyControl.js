@@ -8,7 +8,7 @@ import { useState, useEffect } from "@wordpress/element";
 /**
  * Internal dependencies
  */
-import { textdomain, classNamePrefix } from "../config.json";
+import { textdomain } from "../config.json";
 
 const TaxonomyControl = ({ label, taxonomies, value, onChange }) => {
 	const [query, setQuery] = useState("");
@@ -18,7 +18,7 @@ const TaxonomyControl = ({ label, taxonomies, value, onChange }) => {
 		if (taxonomies) {
 			const newTaxonomies = query
 				? taxonomies.filter(({ name }) =>
-						name.toLowerCase().startsWith(query.toLowerCase())
+						name.toLowerCase().includes(query.toLowerCase())
 				  )
 				: taxonomies;
 			setFilteredTaxonomies(newTaxonomies);
@@ -59,37 +59,17 @@ export default TaxonomyControl;
 
 const SearchInput = ({ value, onChange }) => {
 	return (
-		<div
-			style={{
-				display: "block",
-				marginTop: 5,
-				marginBottom: 10,
-			}}
-		>
+		<div className="wpbt-search-input">
 			<input
 				type="text"
 				placeholder={__("Search", textdomain)}
 				value={value}
 				onChange={onChange}
-				style={{
-					width: "100%",
-				}}
 			/>
 		</div>
 	);
 };
 
 const CheckboxWrapper = ({ children }) => {
-	return (
-		<div
-			className={`${classNamePrefix}-checkbox-wrapper`}
-			style={{
-				height: 200,
-				overflow: "auto",
-				paddingLeft: 4,
-			}}
-		>
-			{children}
-		</div>
-	);
+	return <div className="wpbt-checkbox-wrapper">{children}</div>;
 };

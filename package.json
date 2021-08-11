@@ -29,7 +29,8 @@
 	"peerDependencies": {
 		"@wordpress/block-editor": "^7.0.0",
 		"@wordpress/blocks": "^11.0.0",
-		"@wordpress/i18n": "^4.2.1"
+		"@wordpress/i18n": "^4.2.1",
+		"react-sortable-hoc": "^2.0.0"
 	},
 	"devDependencies": {
 		"@wordpress/scripts": "^17.1.0"
