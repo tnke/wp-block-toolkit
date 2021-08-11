@@ -21,6 +21,13 @@ export const RequireBlocks: React.FC<{
 	blocks: BlockNames;
 }> = props;
 
+export const SortablePostsControl: React.FC<{
+	label: string;
+	posts: any[];
+	value: number[];
+	onChange: (...args: any[]) => any;
+}> = props;
+
 export const TaxonomyControl: React.FC<{
 	label: string;
 	taxonomies: any[];
