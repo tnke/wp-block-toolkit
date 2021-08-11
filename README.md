@@ -26,7 +26,7 @@ Compliments the base WordPress notice system by allowing you to show either warn
 
 ### PostControl
 
-Advanced ComboboxControl for selecting a single post, with search filtering feature.
+Custom ComboboxControl for selecting a single post. Takes an array of post objects and returns and id number on change.
 
 ![PostControl example](assets/PostControl-screenshot-01.png)
 
@@ -59,7 +59,7 @@ Allows you to only show components if certain blocks are installed and activated
 
 ### SortablePostsControl
 
-Select and sort multiple posts, with search filtering.
+Select and sort multiple posts, with search filtering. Takes an array of post objects and returns an array of id numbers on change.
 
 ![SortablePostsControl example](assets/SortablePostsControl-screenshot-01.png)
 
@@ -114,6 +114,10 @@ const { missingBlocks, hasRequiredBlocks } = useRequiredBlocks([
 ```
 
 ## Changelog
+
+### 2.1.1
+
+- Clarified some stuff in readme
 
 ### 2.1.0
 
