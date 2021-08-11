@@ -115,6 +115,12 @@ const { missingBlocks, hasRequiredBlocks } = useRequiredBlocks([
 
 ## Changelog
 
+### 2.1.0
+
+- Removed key option from PostControl and assume a single number value instead (post id)
+- Added SortablePostsControl component, which let's you select and sort multiple posts
+- Moved TaxonomyControl's styles from inline to editor.scss
+
 ### 2.0.2
 
 - Added "prepare" script
