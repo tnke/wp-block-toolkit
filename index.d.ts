@@ -12,9 +12,8 @@ export const InlineNotice: React.FC<{
 export const PostControl: React.FC<{
 	label: string;
 	posts: any[];
-	value: string | number;
+	value: number;
 	onChange: (...args: any[]) => any;
-	postValueKey: string;
 }> = props;
 
 export const RequireBlocks: React.FC<{
