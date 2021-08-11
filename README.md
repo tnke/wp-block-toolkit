@@ -57,6 +57,25 @@ Allows you to only show components if certain blocks are installed and activated
 </RequireBlocks>
 ```
 
+### SortablePostsControl
+
+Select and sort multiple posts, with search filtering.
+
+![SortablePostsControl example](assets/SortablePostsControl-screenshot-01.png)
+
+```javascript
+<SortablePostsControl
+	label={"My Label"}
+	posts={myPosts}
+	value={mySelectedPosts}
+	onChange={(value) =>
+		setAttributes({
+			mySelectedPosts: value,
+		})
+	}
+/>
+```
+
 ### TaxonomyControl
 
 Similar to the default WordPress category selector, shows a filterable list of checkboxes.
