@@ -1,3 +1,5 @@
+__Moved to [https://github.com/evermade/wp-block-toolkit](https://github.com/evermade/wp-block-toolkit)__
+
 # WP Block Toolkit
 
 A simple collection of useful tools for WordPress Gutenberg block building.
